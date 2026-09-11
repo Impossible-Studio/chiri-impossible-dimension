@@ -30,9 +30,9 @@ export const SCORE_HUD_LAYOUT = {
   mobile: {
     totalWidth: 270,
     numberFontSize: 25,
-    // Keep the score on the left edge on phones so it never overlaps the
-    // Mini Chiri button or the centered modal controls.
-    left: 24,
+    // Place it immediately after the Explorer mobile controls while keeping
+    // enough room before the Mini Chiri button.
+    left: 430,
     top: 14,
     numberOffsetX: 0,
     numberOffsetY: -3
