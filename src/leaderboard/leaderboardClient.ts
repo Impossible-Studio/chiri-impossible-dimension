@@ -171,9 +171,10 @@ function createBoardGeometry(frame: Entity): void {
     metallic: 0
   })
 
-  // Keep text clearly in front of the panel. The old 0.012 separation could
-  // disappear through depth precision at this world scale.
-  const textZ = 0.06
+  // The readable face of this rotated surface points toward local -Z. Keep
+  // every label well in front of the opaque pink plane; on mobile a positive
+  // offset placed the text behind it and left the board completely blank.
+  const textZ = -0.12
   titleLabel = createLabel(
     surface,
     Vector3.create(0, 4.15, textZ),
@@ -220,7 +221,7 @@ function createBoardGeometry(frame: Entity): void {
     visitButtons.push(visitButton)
     Transform.create(visitButton, {
       parent: surface,
-      position: Vector3.create(2.9, y, 0.045),
+      position: Vector3.create(2.9, y, -0.1),
       scale: Vector3.create(1.7, .27, 1)
     })
     MeshRenderer.setPlane(visitButton)
@@ -232,7 +233,7 @@ function createBoardGeometry(frame: Entity): void {
     })
     const visitLabel = createLabel(
       surface,
-      Vector3.create(2.9, y, textZ + .015),
+      Vector3.create(2.9, y, -0.14),
       '',
       .78,
       TextAlignMode.TAM_MIDDLE_CENTER,
