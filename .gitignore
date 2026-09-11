@@ -1,0 +1,16 @@
+package-lock.json
+*.js
+node_modules
+bin/
+.DS_Store
+**/.DS_Store
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.editor
+.codex_preview/
+dclcontext/
+source_assets/
+thumbnails/
+tools/
+ᦡɧ/

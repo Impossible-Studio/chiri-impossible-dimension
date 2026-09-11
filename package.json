@@ -1,0 +1,30 @@
+{
+  "name": "dcl-project",
+  "version": "1.0.0",
+  "description": "SDK7 Template scene",
+  "scripts": {
+    "start": "node scripts/start.js",
+    "deploy": "sdk-commands deploy",
+    "build": "sdk-commands build",
+    "upgrade-sdk": "npm install --save-dev @dcl/sdk@auth-server @dcl/js-runtime@auth-server",
+    "upgrade-sdk:auth-server": "npm install --save-dev @dcl/sdk@auth-server @dcl/js-runtime@auth-server",
+    "server-logs": "sdk-commands sdk-server-logs"
+  },
+  "devDependencies": {
+    "@dcl/js-runtime": "7.26.1-31714079767.commit-96e9a29",
+    "@dcl/sdk": "7.26.1-31714079767.commit-96e9a29"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=6.0.0"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "printWidth": 120,
+    "trailingComma": "none"
+  },
+  "dependencies": {
+    "@dcl-sdk/utils": "^1.4.0"
+  }
+}
