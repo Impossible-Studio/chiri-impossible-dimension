@@ -18,3 +18,11 @@ README.md
 *.zip
 *.rar
 src
+scripts
+supabase
+dclcontext
+source_assets
+thumbnails
+tools
+cursor.config
+cursorignore
