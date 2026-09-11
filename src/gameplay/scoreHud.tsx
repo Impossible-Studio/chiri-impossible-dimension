@@ -35,7 +35,9 @@ export function ScoreHud() {
         height: totalHeight,
         positionType: 'absolute',
         position: { left: layout.left, top: layout.top },
-        zIndex: 25,
+        // HUD stays visible during gameplay, but every modal and its dark
+        // backdrop must render above it when a UI is opened.
+        zIndex: 10,
         pointerFilter: 'none'
       }}
       uiBackground={{
